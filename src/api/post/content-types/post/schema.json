@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "Post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "paragraphs": {
+      "displayName": "Paragraph",
+      "type": "component",
+      "repeatable": true,
+      "component": "post.paragraph"
+    },
+    "ads": {
+      "displayName": "Ads",
+      "type": "component",
+      "repeatable": true,
+      "component": "post.ads"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "posts"
+    },
+    "isPopular": {
+      "type": "boolean"
+    },
+    "firstAdBanner": {
+      "displayName": "firstAdBanner",
+      "type": "component",
+      "repeatable": false,
+      "component": "post.first-ad-banner",
+      "required": true
+    },
+    "secondAdBanner": {
+      "displayName": "secondAdBanner",
+      "type": "component",
+      "repeatable": false,
+      "component": "post.second-ad-banner",
+      "required": true
+    },
+    "description": {
+      "type": "blocks",
+      "required": true
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author.author",
+      "inversedBy": "posts"
+    }
+  }
+}

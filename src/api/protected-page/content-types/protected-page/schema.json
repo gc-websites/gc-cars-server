@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "protected_pages",
+  "info": {
+    "singularName": "protected-page",
+    "pluralName": "protected-pages",
+    "displayName": "Protected-page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "password": {
+      "type": "string"
+    }
+  }
+}

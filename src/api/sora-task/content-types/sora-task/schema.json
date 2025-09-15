@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sora_tasks",
+  "info": {
+    "singularName": "sora-task",
+    "pluralName": "sora-tasks",
+    "displayName": "Sora-task",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "prompt": {
+      "type": "text"
+    },
+    "task_status": {
+      "type": "boolean",
+      "default": false
+    },
+    "task_id": {
+      "type": "text"
+    },
+    "hash_id": {
+      "type": "text"
+    }
+  }
+}

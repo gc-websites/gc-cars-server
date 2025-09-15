@@ -1,0 +1,35 @@
+{
+  "name": "gc-coding-cms",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi application",
+  "scripts": {
+    "build": "strapi build",
+    "deploy": "strapi deploy",
+    "dev": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "5.10.2",
+    "@strapi/plugin-users-permissions": "5.10.2",
+    "@strapi/strapi": "5.10.2",
+    "axios": "^1.10.0",
+    "better-sqlite3": "^11.10.0",
+    "form-data": "^4.0.3",
+    "mysql2": "3.9.8",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "socket.io": "^4.8.1",
+    "styled-components": "^6.0.0",
+    "tar-fs": "^3.0.9"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "5fab6ec4-862e-4710-8796-fd9d741c50db"
+  }
+}

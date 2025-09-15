@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_post_second_ad_banners",
+  "info": {
+    "displayName": "secondAdBanner",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "url": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

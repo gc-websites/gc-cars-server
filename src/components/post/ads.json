@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_post_ads",
+  "info": {
+    "displayName": "Ads",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "url": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

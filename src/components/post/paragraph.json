@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_post_paragraphs",
+  "info": {
+    "displayName": "Paragraph",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "text",
+      "required": false
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "blocks",
+      "required": false
+    },
+    "ads": {
+      "type": "component",
+      "repeatable": true,
+      "component": "post.ads"
+    }
+  }
+}
